@@ -11,7 +11,9 @@ Ext.application({
         'App.view.login.Login',
         'App.controller.LoginController',
         'App.view.main.Main',
-        'App.controller.MainController'
+        'App.controller.MainController',
+        'App.view.product.List'
+
     ],
     launch: function () {
         Ext.create('App.view.login.Login').show();
