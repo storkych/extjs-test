@@ -9,5 +9,7 @@ Ext.define('App.store.Products', {
         { id: 4, name: 'Молоко', description: '1.5% ультрапастер.', price: 1.3, quantity: 5 },
         { id: 5, name: 'Какао', description: 'Натуральный порошок', price: 3.9, quantity: 0 }
     ],
+
+    proxy: { type: 'memory' },
     autoLoad: true
 });

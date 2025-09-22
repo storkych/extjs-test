@@ -4,7 +4,9 @@ Ext.define('App.view.product.List', {
     controller: 'product',
     requires: [
         'App.controller.ProductController',
-        'App.store.Products'
+        'App.store.Products',
+        'App.view.product.Edit',
+        'App.util.Validators'
     ],
     layout: { type: 'vbox', align: 'stretch' },
     bodyPadding: 8,

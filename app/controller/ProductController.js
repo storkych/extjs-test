@@ -24,10 +24,12 @@ Ext.define('App.controller.ProductController', {
         }
     },
 
-    onCellClick: function (grid, td, cellIndex, record) {
-        const column = grid.getHeaderContainer().getHeaderAtIndex(cellIndex);
+    onCellClick: function (view, td, cellIndex, record) {
+        const grid = view.up('gridpanel');
+        const column = grid.getColumnManager().getHeaderAtIndex(cellIndex);
         if (column && column.dataIndex === 'name') {
-            Ext.create('App.view.product.Edit', { record: record }).show();
+            Ext.create('App.view.product.Edit', { record }).show();
         }
     }
+
 });
