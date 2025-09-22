@@ -14,6 +14,6 @@ Ext.define('App.controller.MainController', {
 
     onLogout: function () {
         this.getView().destroy();
-        Ext.create('App.view.login.Login');
+        Ext.create('App.view.login.Login').show();
     }
 });
